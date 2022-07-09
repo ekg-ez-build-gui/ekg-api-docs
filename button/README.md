@@ -1,14 +1,13 @@
 # UI Button
+Version 1.0.0
 
-Get start! \
-The EKG button has many options and methods.
-
+-- Get Start!
 ```c++
 auto button = ekg::button("hi-auto");
 ekg_button* button = ekg::button("hi-no-auto");
 ```
 
--- Usage
+-- Usage!
 ```c++
 if (sdl_event.type == SDL_FINGERDOWN || sdl_event.type == SDL_MOUSEBUTTONDOWN) {
 
@@ -18,7 +17,7 @@ if (sdl_event.type == SDL_FINGERDOWN || sdl_event.type == SDL_MOUSEBUTTONDOWN) {
 }
 ```
 
--- Setters
+-- Setters!
 ```c++
 button->set_width(75.0f);
 button->set_size(12.0f); // min height + 6.0f;
@@ -39,7 +38,7 @@ button->set_visibility(ekg::visibility::VISIBLE);
 button->set_state(true);
 ```
 
--- Getters
+-- Getters!
 ```c++
 button->get_width();
 button->get_height();
