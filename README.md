@@ -1,2 +1,3 @@
 # ekg-api
-EKG API
+
+THE OFFICIAL DOCS OF EKG
