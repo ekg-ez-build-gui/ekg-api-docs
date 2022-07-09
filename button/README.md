@@ -8,12 +8,17 @@ auto button = ekg::button("hi-auto");
 ekg_button* button = ekg::button("hi-no-auto");
 ```
 
-OO:
+-- Usage
 ```c++
-ekg::kill(button); // caut it desotry and set to nullptr;
+if (sdl_event.type == SDL_FINGERDOWN || sdl_event.type == SDL_MOUSEBUTTONDOWN) {
+
+	if (button->get_callback_flag()) {
+		std::cout << "Button clicked!" << std::endl;
+	}
+}
 ```
 
-Setters:
+-- Setters
 ```c++
 button->set_width(75.0f);
 button->set_size(12.0f); // min height + 6.0f;
@@ -34,7 +39,7 @@ button->set_visibility(ekg::visibility::VISIBLE);
 button->set_state(true);
 ```
 
-Getters:
+-- Getters
 ```c++
 button->get_width();
 button->get_height();
@@ -55,14 +60,4 @@ button->get_min_width();
 button->get_min_height();
 
 button->get_state();
-```
-
-Usage:
-```c++
-if (sdl_event.type == SDL_FINGERDOWN || sdl_event.type == SDL_MOUSEBUTTONDOWN) {
-
-	if (button->get_callback_flag()) {
-		std::cout << "Button clicked!" << std::endl;
-	}
-}
 ```
