@@ -1,6 +1,6 @@
 # UI Button
 
-Get start! n\
+Get start! \
 The EKG button has many options and methods.
 
 ```c++
